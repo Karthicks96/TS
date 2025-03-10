@@ -1,0 +1,108 @@
+
+// Copy this code to a Google Apps Script project and deploy it as a web app
+// This script receives form data and adds it to a Google Sheet
+
+function doPost(e) {
+  try {
+    // Open the spreadsheet by ID (replace with your actual spreadsheet ID)
+    var spreadsheetId = "YOUR_SPREADSHEET_ID";
+    var sheet = SpreadsheetApp.openById(spreadsheetId).getActiveSheet();
+    
+    // Parse the form data
+    var formData = e.parameter;
+    var timestamp = new Date();
+    var source = formData.source || "Website Form";
+    var recipient = formData.recipient || "esevai1996@gmail.com";
+    
+    // Create an array of data to insert based on the form source
+    var dataRow = [];
+    
+    if (source === "Contact Form") {
+      dataRow = [
+        timestamp,
+        source,
+        formData.name,
+        formData.email,
+        formData.phone,
+        formData.service,
+        formData.message,
+        ""
+      ];
+      
+      // Send email notification
+      sendEmail(recipient, "New Contact Form Submission", 
+        "You have received a new contact form submission:\n\n" +
+        "Name: " + formData.name + "\n" +
+        "Email: " + formData.email + "\n" +
+        "Phone: " + formData.phone + "\n" +
+        "Service Interest: " + formData.service + "\n" +
+        "Message: " + formData.message
+      );
+    } 
+    else if (source === "RFP Form") {
+      dataRow = [
+        timestamp,
+        source,
+        formData.company,
+        formData.contact,
+        formData.email,
+        formData.phone,
+        formData.businessType,
+        formData.services,
+        formData.details,
+        formData.timeline,
+        formData.budget
+      ];
+      
+      // Send email notification
+      sendEmail(recipient, "New RFP Submission", 
+        "You have received a new RFP submission:\n\n" +
+        "Company: " + formData.company + "\n" +
+        "Contact Person: " + formData.contact + "\n" +
+        "Email: " + formData.email + "\n" +
+        "Phone: " + formData.phone + "\n" +
+        "Business Type: " + formData.businessType + "\n" +
+        "Services: " + formData.services + "\n" +
+        "Details: " + formData.details + "\n" +
+        "Timeline: " + formData.timeline + "\n" +
+        "Budget: " + formData.budget
+      );
+    }
+    
+    // Insert the data into the next row
+    sheet.appendRow(dataRow);
+    
+    // Return success response
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: "success" }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } 
+  catch(error) {
+    // Log the error and return error response
+    Logger.log(error);
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: "error", error: error.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function sendEmail(recipient, subject, body) {
+  try {
+    MailApp.sendEmail({
+      to: recipient,
+      subject: subject,
+      body: body
+    });
+  } catch (e) {
+    Logger.log("Error sending email: " + e.toString());
+  }
+}
+
+// Setup instructions:
+// 1. Create a new Google Sheet
+// 2. Create a Google Apps Script project: Tools > Script editor
+// 3. Paste this code
+// 4. Replace YOUR_SPREADSHEET_ID with your actual spreadsheet ID
+// 5. Deploy as a web app: Deploy > New deployment > Web app
+//    - Set access to "Anyone, even anonymous"
+// 6. Copy the web app URL to use in your forms

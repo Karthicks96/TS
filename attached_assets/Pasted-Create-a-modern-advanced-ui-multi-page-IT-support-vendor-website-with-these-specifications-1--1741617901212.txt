@@ -1,0 +1,61 @@
+Create a modern advanced ui, multi-page IT support vendor website with these specifications:
+
+1. *Visual Style:*
+- Glassmorphism design with frosted glass effects
+- Gradient overlays (#4F46E5 to #1E40AF for primary)
+- Modern geometric patterns
+- SVG illustrations of servers/IT infrastructure
+- Smooth scroll animations
+- Responsive hamburger menu
+
+2. *Page Structure:*
+   *Homepage:*
+   - Hero section with parallax background
+   - Animated stats counter (98% uptime, 35% downtime reduction)
+   - Service highlights with icon cards
+   - Client logo carousel
+
+   *About Us:*
+   - Interactive timeline of company milestones
+   - Team section with hover bios
+   - Location map (Leaflet.js integration)
+   - Certifications display
+
+   *Services:*
+   - Expandable service cards with:
+     1. Hardware Diagnostics (SMPS/motherboard focus)
+     2. Enterprise Maintenance (300+ assets expertise)
+     3. Preventive Maintenance Solutions
+     4. Ticket Resolution System
+   - Comparison table: Your Solution vs Traditional Support
+
+   *Gallery:*
+   - Masonry grid layout
+   - Hover-zoom project images
+   - Filter tags (Hardware, Software, Infrastructure)
+   - Before/After sliders
+
+   *Contact:*
+   - 3D office location map
+   - Service inquiry form with dropdown
+   - Live chat widget
+   - Emergency support badge (24/7 availability)
+
+3. *Technical Requirements:*
+- Built with React.js + Three.js for 3D elements
+- GSAP for animations
+- Firebase backend for form handling
+- SEO-optimized metadata
+- Light/dark mode toggle
+- Loading screen with animated logo
+
+4. *Content Integration:*
+- Dynamic content loading from JSON
+- CMS-ready architecture
+- Social proof widgets (LinkedIn testimonials)
+
+5. *Vendor-Specific Elements:*
+- RFP submission portal
+- Service area radius calculator
+
+Include a maintenance mode page with service status indicators. Please ensure that the message is sent to me if the client fills it out and submits it. My email is esevai1996@gmail.com on My emailjs user id is esevai1996@gmail.com and My service id service_gg1dfyx and template_e3yk898. the location on the map for office is to be virudhachalam tamilnadu 606001. our Service area is pondycherry, Villupuram, cuddalore, kallakurichi, chidhambharam. and we are expanding we have 5 engineers in our group. and in gallery add some ai generated thats your choice and make some space for our future project images to add. in contact add my phone number 6382583636 and my mail esevai1996@gmail.com for mail contact.

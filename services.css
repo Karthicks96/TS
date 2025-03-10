@@ -1,0 +1,425 @@
+
+/* Services Page Specific Styles */
+
+/* Page Banner */
+.page-banner {
+  background: linear-gradient(135deg, var(--primary-gradient-from), var(--primary-gradient-to));
+  padding: 8rem 0 4rem;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.page-banner h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.page-banner p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Overview Section */
+.services-overview {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.services-overview .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.overview-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.overview-image {
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.overview-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-speed);
+}
+
+.overview-image:hover img {
+  transform: scale(1.03);
+}
+
+/* Detailed Services Section */
+.detailed-services {
+  padding: 5rem 0;
+  background-color: rgba(245, 247, 250, 0.5);
+}
+
+.service-detail {
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.service-header:hover {
+  background-color: rgba(79, 70, 229, 0.05);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  margin-right: 1.5rem;
+  background: linear-gradient(135deg, var(--primary-gradient-from), var(--primary-gradient-to));
+  color: white;
+}
+
+.service-title {
+  flex: 1;
+}
+
+.service-title h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-title p {
+  opacity: 0.8;
+}
+
+.expand-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-speed);
+}
+
+.service-detail.active .expand-icon {
+  transform: rotate(180deg);
+}
+
+.service-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+}
+
+.service-detail.active .service-content {
+  max-height: 2000px;
+  padding: 0 2rem 2rem;
+}
+
+.service-info h4 {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+.service-info ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.service-info ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-info ul li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-gradient-from);
+  font-weight: bold;
+}
+
+.service-image {
+  height: 300px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-speed);
+}
+
+.service-detail.active .service-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Comparison Table */
+.comparison-section {
+  padding: 5rem 0;
+}
+
+.comparison-table-container {
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th {
+  background: linear-gradient(135deg, var(--primary-gradient-from), var(--primary-gradient-to));
+  color: white;
+  padding: 1.2rem;
+  text-align: left;
+}
+
+.comparison-table th:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+
+.comparison-table th:last-child {
+  border-top-right-radius: var(--border-radius);
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table td:first-child {
+  font-weight: 600;
+}
+
+.comparison-table .fa-check-circle {
+  color: #10B981;
+}
+
+.comparison-table .fa-times-circle {
+  color: #EF4444;
+}
+
+/* Calculator Section */
+.calculator-section {
+  padding: 5rem 0;
+  background-color: rgba(245, 247, 250, 0.5);
+}
+
+.calculator-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-control {
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-gradient-from);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.calculator-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+}
+
+.result-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-gradient-from);
+}
+
+#result-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.result-available {
+  color: #10B981;
+  font-weight: 600;
+}
+
+.result-unavailable {
+  color: #EF4444;
+  font-weight: 600;
+}
+
+/* RFP Section */
+.rfp-section {
+  padding: 5rem 0;
+}
+
+.rfp-form {
+  padding: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* CTA Section */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .detailed-services,
+.dark-mode .calculator-section {
+  background-color: rgba(15, 23, 42, 0.5);
+}
+
+.dark-mode .form-control {
+  background: rgba(30, 41, 59, 0.7);
+  color: var(--light-text);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .service-header:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .comparison-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .services-overview .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    padding: 7rem 0 3rem;
+  }
+  
+  .page-banner h1 {
+    font-size: 2.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-banner h1 {
+    font-size: 2rem;
+  }
+  
+  .service-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .service-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .expand-icon {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our project gallery - IT Support Services by EService IT Solutions">
+  <title>Gallery - EService IT Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div class="loader">
+      <svg width="80" height="80" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" class="loader-circle"/>
+        <path d="M12 2V4C16.41 4 20 7.59 20 12H22C22 6.48 17.52 2 12 2Z" class="loader-segment"/>
+      </svg>
+      <span>EService IT</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <span>EService</span>
+          <span>IT Solutions</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Project Gallery</h1>
+        <p>Explore our successful IT infrastructure projects and implementations</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Work</h2>
+          <p>Browse through our portfolio of successful IT projects and implementations</p>
+        </div>
+        
+        <div class="gallery-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="hardware">Hardware</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        </div>
+        
+        <div class="gallery-grid">
+          <!-- Hardware Projects -->
+          <div class="gallery-item" data-category="hardware">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Server Hardware Installation">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>Server Hardware Installation</h3>
+                  <p>Enterprise server rack setup and configuration</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="hardware">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1539683255143-73a6b838b106?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Workstation Setup">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>Workstation Setup</h3>
+                  <p>Modern workstation configuration for optimal productivity</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Software Projects -->
+          <div class="gallery-item" data-category="software">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Custom Software Development">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>Custom Software Development</h3>
+                  <p>Bespoke software solutions for business process automation</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="software">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="ERP Implementation">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>ERP Implementation</h3>
+                  <p>Enterprise resource planning system deployment</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Infrastructure Projects -->
+          <div class="gallery-item" data-category="infrastructure">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Network Infrastructure">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>Network Infrastructure</h3>
+                  <p>Complete network infrastructure redesign and implementation</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="infrastructure">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cloud Migration">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>Cloud Migration</h3>
+                  <p>Seamless migration from on-premises to cloud infrastructure</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Additional Projects (Mixed Categories) -->
+          <div class="gallery-item" data-category="hardware infrastructure">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1520869562399-e772f042f422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Data Center Setup">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>Data Center Setup</h3>
+                  <p>Complete data center design and implementation</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="software infrastructure">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Security System Deployment">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <h3>Security System Deployment</h3>
+                  <p>Advanced cybersecurity infrastructure implementation</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Before/After Comparison Section -->
+        <div class="section-header" style="margin-top: 4rem;">
+          <h2>Transformation Stories</h2>
+          <p>See the impact of our solutions through before and after comparisons</p>
+        </div>
+        
+        <div class="comparison-container">
+          <!-- Comparison Slider 1 -->
+          <div class="comparison-slider">
+            <div class="before-after-wrapper">
+              <div class="before-image">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Before Workspace Optimization">
+                <span class="label">Before</span>
+              </div>
+              <div class="after-image">
+                <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="After Workspace Optimization">
+                <span class="label">After</span>
+              </div>
+              <div class="slider-handle">
+                <div class="handle-line"></div>
+                <div class="handle-circle">
+                  <i class="fas fa-arrows-alt-h"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-caption">
+              <h3>Workspace Optimization</h3>
+              <p>Complete office IT infrastructure upgrade resulting in 40% improved productivity</p>
+            </div>
+          </div>
+          
+          <!-- Comparison Slider 2 -->
+          <div class="comparison-slider">
+            <div class="before-after-wrapper">
+              <div class="before-image">
+                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Before Server Room">
+                <span class="label">Before</span>
+              </div>
+              <div class="after-image">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="After Server Room">
+                <span class="label">After</span>
+              </div>
+              <div class="slider-handle">
+                <div class="handle-line"></div>
+                <div class="handle-circle">
+                  <i class="fas fa-arrows-alt-h"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-caption">
+              <h3>Server Room Redesign</h3>
+              <p>Complete server room reorganization with improved cooling and 30% energy savings</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="future-projects">
+          <div class="section-header">
+            <h2>Future Projects</h2>
+            <p>Stay tuned for upcoming project showcases</p>
+          </div>
+          <div class="coming-soon">
+            <i class="fas fa-construction"></i>
+            <h3>More Projects Coming Soon</h3>
+            <p>We're constantly working on exciting new implementations.</p>
+            <p>Check back for updates or <a href="contact.html">contact us</a> for more information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <span>EService</span>
+            <span>IT Solutions</span>
+          </div>
+          <p>Professional IT support services across Pondicherry, Villupuram, Cuddalore, Kallakurichi, and Chidambaram.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="services.html#hardware">Hardware Diagnostics</a></li>
+            <li><a href="services.html#enterprise">Enterprise Maintenance</a></li>
+            <li><a href="services.html#preventive">Preventive Solutions</a></li>
+            <li><a href="services.html#ticket">Ticket Resolution</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Virudhachalam, Tamil Nadu 606001</li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+916382583636">+91 6382583636</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:esevai1996@gmail.com">esevai1996@gmail.com</a></li>
+          </ul>
+          <div class="emergency-badge">
+            <span>24/7 Emergency Support Available</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 EService IT Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

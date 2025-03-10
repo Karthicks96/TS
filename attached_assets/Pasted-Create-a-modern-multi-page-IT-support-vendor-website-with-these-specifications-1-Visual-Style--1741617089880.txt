@@ -1,0 +1,70 @@
+Create a modern, multi-page IT support vendor website with these specifications:
+
+1. *Visual Style:*
+- Glassmorphism design with frosted glass effects
+- Gradient overlays (#4F46E5 to #1E40AF for primary)
+- Modern geometric patterns
+- SVG illustrations of servers/IT infrastructure
+- Smooth scroll animations
+- Responsive hamburger menu
+
+2. *Page Structure:*
+   *Homepage:*
+   - Hero section with parallax background
+   - Animated stats counter (98% uptime, 35% downtime reduction)
+   - Service highlights with icon cards
+   - Client logo carousel
+
+   *About Us:*
+   - Interactive timeline of company milestones
+   - Team section with hover bios
+   - Location map (Leaflet.js integration)
+   - Certifications display
+
+   *Services:*
+   - Expandable service cards with:
+     1. Hardware Diagnostics (SMPS/motherboard focus)
+     2. Enterprise Maintenance (300+ assets expertise)
+     3. Preventive Maintenance Solutions
+     4. Ticket Resolution System
+   - Comparison table: Your Solution vs Traditional Support
+
+   *Gallery:*
+   - Masonry grid layout
+   - Hover-zoom project images
+   - Filter tags (Hardware, Software, Infrastructure)
+   - Before/After sliders
+
+   *Case Studies:*
+   - LIC project case study with:
+     - Interactive infrastructure diagram
+     - Downtime reduction visualization
+     - Performance metrics dashboard
+
+   *Contact:*
+   - 3D office location map
+   - Service inquiry form with dropdown
+   - Live chat widget
+   - Emergency support badge (24/7 availability)
+
+3. *Technical Requirements:*
+- Built with React.js + Three.js for 3D elements
+- GSAP for animations
+- Firebase backend for form handling
+- SEO-optimized metadata
+- Light/dark mode toggle
+- Loading screen with animated logo
+
+4. *Content Integration:*
+- Dynamic content loading from JSON
+- CMS-ready architecture
+- Social proof widgets (LinkedIn testimonials)
+- Downloadable service PDF brochures
+
+5. *Vendor-Specific Elements:*
+- RFP submission portal
+- Service area radius calculator
+- SLA agreement preview
+- Vendor certification showcase
+
+Include a maintenance mode page with service status indicators. Use Replit's built-in hosting capabilities and database features for the backend."
